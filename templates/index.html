@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Smart Shed</title>
+    </head>
+    <body>
+        <h1>Welcome to Arekseon House</h1>
+        <h3>Table light is {{table_light_status}}</h3>
+	        <style>form { display: inline }</style>
+	        <p display:inline>
+	        	<form method=post>
+	        		<input type=hidden name=device value='table_light'>
+	        		<input type=hidden name=status value='1'>
+	        		<input type=submit name='submit' value='ON'>
+	        	</form>
+	        	<form method=post>
+	        		<input type=hidden name=device value='table_light'>
+	        		<input type=hidden name=status value='0'>
+	        		<input type=submit name='submit' value='OFF'>
+	        	</form>
+	    	</p>
+
+	    <h3>Solder light is {{solder_light_status}}</h3>
+	        <style>form { display: inline }</style>
+	        <p display:inline>
+	        	<form method=post>
+	        		<input type=hidden name=device value='solder_light'>
+	        		<input type=hidden name=status value='1'>
+	        		<input type=submit name='submit' value='ON'>
+	        	</form>
+	        	<form method=post>
+	        		<input type=hidden name=device value='solder_light'>
+	        		<input type=hidden name=status value='0'>
+	        		<input type=submit name='submit' value='OFF'>
+	        	</form>
+	    	</p>
+	    	
+	    <h3>Blue light is {{blue_light_status}}</h3>
+	        <style>form { display: inline }</style>
+	        <p display:inline>
+	        	<form method=post>
+	        		<input type=hidden name=device value='blue_light'>
+	        		<input type=hidden name=status value='1'>
+	        		<input type=submit name='submit' value='ON'>
+	        	</form>
+	        	<form method=post>
+	        		<input type=hidden name=device value='blue_light'>
+	        		<input type=hidden name=status value='0'>
+	        		<input type=submit name='submit' value='OFF'>
+	        	</form>
+	    	</p>
+
+	    <h3>Big light is {{big_light_status}}</h3>
+	        <style>form { display: inline }</style>
+	        <p display:inline>
+	        	<form method=post>
+	        		<input type=hidden name=device value='big_light'>
+	        		<input type=hidden name=status value='1'>
+	        		<input type=submit name='submit' value='ON'>
+	        	</form>
+	        	<form method=post>
+	        		<input type=hidden name=device value='big_light'>
+	        		<input type=hidden name=status value='0'>
+	        		<input type=submit name='submit' value='OFF'>
+	        	</form>
+	    	</p>
+
+	    <h3>Door is {{door_status}}</h3>
+	        <style>form { display: inline }</style>
+	        <p display:inline>
+	        	<form method=post>
+	        		<input type=hidden name=device value='door'>
+	        		<input type=hidden name=status value='1'>
+	        		<input type=submit name='submit' value='OPEN'>
+	        	</form>
+	        	<form method=post>
+	        		<input type=hidden name=device value='door'>
+	        		<input type=hidden name=status value='0'>
+	        		<input type=submit name='submit' value='CLOSE'>
+	        	</form>
+	    	</p>	
+
+	    	<p> Click <a href="/logout">here</a> to logout.</p>
+    </body>
+</html>
